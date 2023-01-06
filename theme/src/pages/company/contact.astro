@@ -1,0 +1,68 @@
+---
+import ContactForm from '../../components/forms/ContactForm.astro';
+import Layout from '../../layouts/Page.astro';
+import { Container } from '@littlesticks/odyssey-theme-components';
+
+const seo = {
+	title: 'Contact | Astro Odyssey Theme',
+	description: 'Contact Page',
+};
+---
+
+<Layout seo={seo}>
+	<Container>
+		<section class="contact-hero__section">
+			<div class="contact-hero__text-section">
+				<h2>Contact Us For a Free Consultation</h2>
+				<p>
+					This is a contact form using Odyssey's form components to create a
+					contact form component. The contact form is setup to use Netlify's
+					form detection; however, it can easily be translated to other popular
+					form services such as Formspree, Getform, Formspark, etc.
+				</p>
+				<div>
+					<p>
+						<a aria-label="Chat on WhatsApp" href="https://wa.me/918953402532?text=Hello%0AI%27m%20interested%20in%20leasing%20a%20property%20in%20Chennai.%20Please%20reach%20me%20back" > <img alt="Chat on WhatsApp" src="/assets/images/landing-1/whatsapp1.png" />
+						</a>
+						<hr/>
+						<em><a href="tel:+918953402532">(+91) 895-340-2532</a></em> • <em
+							><a href="mailto:snenterprises_1999@rediffmail.com">snenterprises2000@gmail.com</a
+							></em
+						>
+					</p>
+				</div>
+			</div>
+			<div class="col-2__container">
+				<ContactForm />
+			</div>
+		</section>
+	</Container>
+</Layout>
+
+<style>
+	.contact-hero__section {
+		margin: var(--section-margin) auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		min-height: calc(90vh - var(--navbar-height));
+		gap: 3rem;
+	}
+	.contact-hero__text-section {
+		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: var(--theme-surface-1);
+		border-radius: var(--theme-shape-radius);
+	}
+	.col-2__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	@media (max-width: 768px) {
+		.contact-hero__section {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
