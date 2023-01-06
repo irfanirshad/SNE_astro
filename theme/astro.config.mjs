@@ -6,7 +6,7 @@ import lit from "@astrojs/lit";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://irfanirshad.github.io/',
+  site: 'https://irfanirshad.github.io/SNE_astro',
   base: '/SNE_astro',
   // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
   sitemap: true,
