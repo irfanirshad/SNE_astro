@@ -1,6 +1,10 @@
 ---
-import {Icon} from 'astro-icon';
-import { Button, Container, TextCardSection } from '@littlesticks/odyssey-theme-components';
+import { Icon } from 'astro-icon';
+import {
+	Button,
+	Container,
+	TextCardSection,
+} from '@littlesticks/odyssey-theme-components';
 import Layout from '../../layouts/Page.astro';
 
 const seo = {
@@ -14,34 +18,28 @@ const seo = {
 		<TextCardSection>
 			<h1>Get Started with Odyssey</h1>
 			<div class="cta-buttons__container">
-        <Button
-        href="https://littlesticks.dev/templates/odyssey-theme"
-        outlined
-        newTab
-        customIcon
-        >
-        Get Odyssey Theme
-        <Fragment slot="icon">
-          <Icon name="ic:baseline-launch" />
-        </Fragment>
-      </Button>
-        <Button
-					href="/theme/theme-setup"
-          customIcon
-					>
-          Theme Setup
-          <Fragment slot="icon">
-            <Icon name="ic:baseline-chevron-right" />
-          </Fragment>
+				<Button
+					href="https://littlesticks.dev/templates/odyssey-theme"
+					outlined
+					newTab
+					customIcon
+				>
+					Get Odyssey Theme
+					<Fragment slot="icon">
+						<Icon name="ic:baseline-launch" />
+					</Fragment>
 				</Button>
-        <Button
-					href="/theme/customizing-odyssey"
-          customIcon
-					>
-          Customizing Odyssey
-          <Fragment slot="icon">
-            <Icon name="ic:baseline-chevron-right" />
-          </Fragment>
+				<Button href="/theme/theme-setup" customIcon>
+					Theme Setup
+					<Fragment slot="icon">
+						<Icon name="ic:baseline-chevron-right" />
+					</Fragment>
+				</Button>
+				<Button href="/theme/customizing-odyssey" customIcon>
+					Customizing Odyssey
+					<Fragment slot="icon">
+						<Icon name="ic:baseline-chevron-right" />
+					</Fragment>
 				</Button>
 			</div>
 		</TextCardSection>
@@ -54,7 +52,7 @@ const seo = {
 		flex-wrap: wrap;
 	}
 	.cta-buttons__container :global(a) {
-    margin-right: 1rem;
+		margin-right: 1rem;
 		margin-bottom: 1rem;
 	}
 </style>

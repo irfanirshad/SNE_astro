@@ -1,12 +1,12 @@
 ---
-import { Button, FormInput, FormSelect, FormTextarea } from '@littlesticks/odyssey-theme-components';
+import {
+	Button,
+	FormInput,
+	FormSelect,
+	FormTextarea,
+} from '@littlesticks/odyssey-theme-components';
 
-const selectOptions = [
-  "Google Search",
-  "Social Media",
-  "Email",
-]
-
+const selectOptions = ['Google Search', 'Social Media', 'Email'];
 ---
 
 <!-- <form name="Contact Form" method="POST" action="/contact-thank-you">
@@ -17,25 +17,53 @@ const selectOptions = [
   <Button>Submit</Button>
 </form> -->
 
-
-<form action="https://formsubmit.co/ibm2014002@iiita.ac.in" method="POST" >
-  <input type="hidden" name="_subject" value="Message from website's contact form" >
-  <input type="hidden" name="_template" value="table" />
-  <FormInput type="text" name="name" label="Name" placeholder="Your Name" required />
-  <input type="hidden" name="_blacklist" value="spammy, spam, bot , wp, porn, xxx, porno, banned, term, phrase">
-  <FormInput type="email" label="Email" name="email" placeholder="Email Address" required />
-  <input type="hidden" name="_autoresponse" value="your custom message.THANKYOU FOR SUBMISSiOn" >
-  <FormInput type="text" label="Message" name="Message" placeholder="Write your message here. Leave your number for a quick call-up." required />
-  <input type="hidden" name="_next" value="https://http://localhost:3000/">
-  <input type="text" name="_honey" style="display:none">
-  <button type="submit">Send</button>
+<form action="https://formsubmit.co/ibm2014002@iiita.ac.in" method="POST">
+	<input
+		type="hidden"
+		name="_subject"
+		value="Message from website's contact form"
+	/>
+	<input type="hidden" name="_template" value="table" />
+	<FormInput
+		type="text"
+		name="name"
+		label="Name"
+		placeholder="Your Name"
+		required
+	/>
+	<input
+		type="hidden"
+		name="_blacklist"
+		value="spammy, spam, bot , wp, porn, xxx, porno, banned, term, phrase"
+	/>
+	<FormInput
+		type="email"
+		label="Email"
+		name="email"
+		placeholder="Email Address"
+		required
+	/>
+	<input
+		type="hidden"
+		name="_autoresponse"
+		value="your custom message.THANKYOU FOR SUBMISSiOn"
+	/>
+	<FormInput
+		type="text"
+		label="Message"
+		name="Message"
+		placeholder="Write your message here. Leave your number for a quick call-up."
+		required
+	/>
+	<input type="hidden" name="_next" value="https://http://localhost:3000/" />
+	<input type="text" name="_honey" style="display:none" />
+	<button type="submit">Send</button>
 </form>
 
-
 <style>
-  form {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
+	form {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
 </style>

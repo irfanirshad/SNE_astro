@@ -1,5 +1,9 @@
 ---
-import { Button, Container, TextCardSection } from '@littlesticks/odyssey-theme-components';
+import {
+	Button,
+	Container,
+	TextCardSection,
+} from '@littlesticks/odyssey-theme-components';
 import Layout from '../layouts/Page.astro';
 
 const seo = {
@@ -12,13 +16,9 @@ const seo = {
 	<Container>
 		<TextCardSection>
 			<h1>404</h1>
-      <h2>Page Not Found 👀</h2>
+			<h2>Page Not Found 👀</h2>
 			<div class="cta-buttons__container">
-        <Button
-					href="/"
-					>
-          Return Home
-				</Button>
+				<Button href="/">Return Home</Button>
 			</div>
 		</TextCardSection>
 	</Container>
@@ -30,7 +30,7 @@ const seo = {
 		flex-wrap: wrap;
 	}
 	.cta-buttons__container :global(a) {
-    margin-right: 1rem;
+		margin-right: 1rem;
 		margin-bottom: 1rem;
 	}
 	.code-buttons__container {
