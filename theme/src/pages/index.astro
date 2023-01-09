@@ -1,11 +1,17 @@
 ---
-import { Container, FeatureCard } from '@littlesticks/odyssey-theme-components';
-
+import { AnnouncementBar,Container, FeatureCard, CtaCardSection, Button,CustomerQuoteSection } from '@littlesticks/odyssey-theme-components';
+import {Icon} from 'astro-icon'
 import Layout from '../layouts/Page.astro';
 import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
+
+const seo = {
+	title: 'SN Enterprises | Rent your office by tomorrow in Chennai',
+	description: 'Instant office leasing for your business needs. Book your office by tomorrow in Chennai',
+};
 ---
 
-<Layout>
+<AnnouncementBar text="Read Our Latest Blog Post" href="/blog/posts/remote-work-mental-health/" slot="announcement-bar"/>
+<Layout seo={seo}>
 	<HomeHeroSection />
 	<Container>
 		<section class="feature-card__section">
@@ -20,6 +26,8 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 			</div>
 		</section>
 	</Container>
+
+
 
 	<Container>
 		<section class="feature-card__section">
@@ -51,6 +59,12 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 		</section>
 	</Container>
 
+	<CustomerQuoteSection
+		quoteText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, vero nobis? Voluptas assumenda, voluptatibus commodi qui ducimus delectus praesentium maiores, impedit iure labore ratione, ea facilis numquam doloremque aperiam aspernatur."
+		customerName="Happy Customer"
+	/>
+
+	
 	<Container>
 		<section class="feature-card__section">
 			<h2>Theme Pages</h2>
@@ -70,8 +84,18 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 				</FeatureCard>
 			</div>
 		</section>
+
+		<CtaCardSection background="var(--theme-surface-2)" color="var(--theme-on-surface-2)">
+			<h2>Need a space for your office? Call us now and get it done by 24 hours!</h2>
+			<p>It only takes a couple clicks to have your problems solved. Contact us for a free consultation </p>
+			<Button href="/company/contact" customIcon>Get Started <Fragment slot="icon">
+			  <Icon name="ic:baseline-chevron-right"/>
+			</Fragment></Button>
+		  </CtaCardSection>
+
 	</Container>
 </Layout>
+
 
 <style>
 	.feature-card__section {

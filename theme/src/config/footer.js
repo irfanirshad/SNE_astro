@@ -1,3 +1,5 @@
+import { Container, Button } from '@littlesticks/odyssey-theme-components';
+
 export const footerSocials = [
 	{
 		name: 'Twitter',
