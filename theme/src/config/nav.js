@@ -12,8 +12,8 @@ export const nav = [
 		slug: '/company/about',
 	},
 	{
-		title: 'Our  Services',
-		slug: '/services/services',
+		title: 'Solutions',
+		slug: '/solutions/solutions',
 	},
 	{
 		title: 'Contact',
