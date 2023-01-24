@@ -1,6 +1,6 @@
 export default {
-	title: `Chennai Office Spaces for Rent Instant`,
-	description: `Chennai Office Space for Rent. Book your office in Chennai by tomorrow`,
+	title: `Office Spaces for Rent in Chennai. Fully furnished office space for rent in Chennai`,
+	description: `Office Spaces for Rent in Chennai. Fully furnished office space for rent in Chennai. Book your office in Chennai by tomorrow`,
 	url: `https://www.snechennai.com`, // No trailing slash!
 	name: `SNE`, // The short name of the business or brand name. Used for things like the copyright in the footer.
 	enableThemeSwitcher: true,

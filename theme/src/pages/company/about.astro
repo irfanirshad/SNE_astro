@@ -1,71 +1,122 @@
 ---
-import { TextSection } from '@littlesticks/odyssey-theme-components';
+import { TextSection,Button,ThreeColumnTextSection, CtaCardSection, Container, CustomerQuoteSection} from '@littlesticks/odyssey-theme-components';
 import Layout from '../../layouts/Page.astro';
 import HeroSection from '../../components/sections/heros/HeroSection.astro';
-
+import ContactForm from '../../components/forms/ContactForm.astro';
 const seo = {
-	title: 'About | SN Enterprises',
-	description: 'About Page',
+	title: 'Office Spaces for Rent in Chennai. Fully furnished office space for rent in Chennai',
+	description: 'Office Spaces for Rent in Chennai. Fully furnished office space for rent in Chennai',
 };
 ---
 
 <Layout {seo}>
 	<HeroSection>
 		<div slot="text-container">
-			<h1>About Odyssey</h1>
+			<h1>Our Approach</h1>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, nisi
-				recusandae? Quidem dignissimos nobis, dicta unde, aperiam voluptate
-				autem iste reprehenderit, aliquam ducimus illo ea ipsum qui animi sequi.
-				Numquam.
+Our approach is methodical, deliberate, and thorough: We start by listening to our clients. We take the time to fully understand their business, their balance sheet, and their short and long term strategic plan, from both management and finance.
+<br/>
+<br/>
+Once we have a complete understanding of our client and our client’s needs, we will present a strategy. We will then survey and search the commercial real estate market. We will present all the options for our client’s review. To simplify the process, we will make a short list of recommended options that may be best suited for our client’s needs.
+<br/>
+<br/>
+At SNE, we avoid conflicts of interest. We work only with a preferred book of long term clients who share the same core value system and moral framework.
 			</p>
 		</div>
 		<picture slot="image-container">
 			<img
-				src="/assets/images/home/classic-hero.jpg"
-				alt="Astro Odyssee"
-				id="home-hero-image"
+				src="/assets/images/home/about/chennai.jpg"
+				alt="About Us background image"
 			/>
 		</picture>
 	</HeroSection>
+	<Container>
+	<CtaCardSection>
+	<ThreeColumnTextSection>
+		<div slot="column-1-body">
+			<br/>
+			<br/>
+			<h2>Understand</h2>
+			<br/>
+			<p>
+				We start by listening to you and taking the time to fully understand their business, balance sheet, and long-term managerial and financial strategic plan.
+			</p>
+		</div>
+		<div slot="column-2-body">
+			<br/>
+			<br/>
+			<h2>Strategize</h2>
+			<p>
+				We present a strategy that will work with both your short-term and long-term needs.We survey and search the commercial real estate market, gathering multiple options for your review.
+			</p>
+		</div>
+		<div slot="column-3-body">
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<h2>Review</h2>
+			<p>
+				We present all options to you. To simplify the process, we make a short list of recommended options that may be best suited for your needs.This helps businesses understand what kind of property type resonates with the clients.
+			</p>
+		</div>
+	</ThreeColumnTextSection>
+</CtaCardSection>
+</Container>
+
 	<TextSection narrow>
-		<p>
-			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo
-			asperiores alias illo accusamus voluptatem ea cum nemo odit! Consequatur
-			quidem quo iusto quam ea neque nisi dolorum quod, recusandae id!
-			Repudiandae, fugit labore voluptatum beatae modi omnis adipisci corrupti
-			aut aliquid cumque inventore iure possimus doloremque iste incidunt nulla
-			architecto. Nobis iusto sunt voluptatem necessitatibus laborum, earum
-			doloremque fugit rerum!
+		<h2>Meet the SNE Team</h2>
+<h4>
+
+Every business is defined by its team. Our team is managed by real estate advisors with more than 20 years of collective real estate experience and knowledge. We are one of the only commercial real estate company in Chennai, Tamil Nadu in which the founding members were all born in Chennai proper and have been here since birth. Additionally, we have backgrounds not just in real estate, but also in accounting and finance. We have been business consultants, business managers, public accountants, and independent auditors. Our backgrounds are in Business Administration and we hold advanced degrees to this end. Our client experiences range from start-up clients looking for small, short term space, to large, thirty-five-year-old international organizations with offices in more than 30 countries, and annual operating budgets exceeding hundred crores. No matter the size of the client, our client is always the Tenant – never the Landlord. And every Tenant deserves a great deal.
+</h4>
+<br/>
+
+		<img
+				src="/assets/images/home/about/img2.jpeg"
+				alt="skysraper image"
+				height="600px"
+				width="900px"
+			/>
+			<br/>
+<br/>		
+<br/>
+	<h2>Asking the Right Questions</h2>
+<p>
+How can we serve your interests and negotiate the best rental rate for you if we also represent the building, or if we also represent the building owner at another location, or if we are working alongside the building’s Landlord representative on other deals? 
+
+The answer is; we can’t. So we don’t.  Is it possible to serve the needs and desires of the tenant AND the Landlord? The answer, unequivocally, is NO.
+
+Our goal is to work for you, the tenant, and only for you. We will negotiate the best lease renewal or we will recommend you consider relocation options. And we will make independent, third-party recommendations based on the options available to you…not just from your landlord, but from the market as a whole.
 		</p>
-		<p>
-			Fugit asperiores harum consectetur sapiente deleniti. Optio enim tenetur
-			impedit reprehenderit labore, illo eius in, consequatur odio dolore iste
-			assumenda explicabo, nisi similique qui obcaecati possimus delectus
-			reiciendis quod modi.
+		<CustomerQuoteSection
+		quoteText="We always adhere to the six common-law fiduciary duties to our clients: Care, Obedience, Loyalty, Disclosure, Accounting, and Confidentiality…these six duties are our cornerstone."
+		customerName="S N Enterprises Managing Director Ameen Aziz"
+	/>
+
+	<img
+	src="/assets/images/home/about/ware.jpg"
+	alt="skysraper image"
+	height="500px"
+	width="900px"
+/>
+<br/>
+
+
+	<h2>Our Philosophy</h2>
+<p>
+Our long-term philosophy is to build a relationship with you that spans 3-5 transaction cycles. SNE is happy to broker your first office lease, albeit a small, short-term, office lease, because we believe in your business and have confidence in the likelihood of your long-term success. We want to be here as you grow and expand and move from your first space to your second, and so on and so forth. If we can do right by you, then we can work with you for 40 years and broker 6 office deals for you. And therein lies the mutually beneficial relationship.
+
+SNE commits to you that we will do everything in our power to meet and exceed your expectations. We will broker a better deal for you. We will strive to be your lifetime broker. And we will strive to be the brokers that you recommend to other office tenants in and around Washington DC.
 		</p>
 
 		<p>
-			Vel tempore rem omnis esse officiis optio, explicabo, quod deleniti
-			adipisci ullam cum necessitatibus eius minus vero saepe ad, dicta rerum
-			praesentium deserunt illo itaque odio corrupti voluptatum quibusdam.
-			Pariatur. Porro neque tempore, illum eligendi deleniti iure dolorem amet
-			magnam at dolores veniam nemo cumque aut alias repellat est dicta sit
-			repellendus facilis officia? Minima dolorum quo ducimus adipisci
-			perferendis.
+			In order to foster this level of service and satisfaction, SNE will assist with the ongoing management of your lease, will monitor the building's pass-through expenses and real estate taxes, and keep you abreast of changes in the market and rental rate trends and vacancy trends for your building and submarket. When the time is right, we will assist with renegotiating your lease and creating several additional options for your review. Should you choose to relocate (because you are contracting, growing, or taking advantage of an opportunity to reduce your rent expense), we will be there, right by your side, to assist with brokerage, the build-out of your new space, the move coordination, and much more.
+			<br/>
+			<br/>
+			<h4>Contact Us for a free consult</h4>
 		</p>
-		<p>
-			Quis distinctio tempora sequi sit repudiandae cumque nostrum deserunt,
-			voluptatibus rem eum fuga modi beatae cum ullam delectus dicta atque eius
-			nam quos corporis. Animi praesentium quae nobis. Odit, mollitia.
-			Voluptatum, hic explicabo. Ex accusamus ipsa ea dolor commodi quas esse
-			ipsum alias et adipisci error necessitatibus atque facere rerum ratione
-			consequatur aspernatur repudiandae minima consectetur fuga, doloremque
-			dolorum pariatur. Ipsam error eaque velit possimus porro eum quod illo
-			iusto officia magnam magni, beatae nisi voluptate praesentium? Saepe
-			distinctio adipisci quas hic quae facilis? Sequi eum hic aperiam impedit
-			minus?
-		</p>
+	<ContactForm/>
 	</TextSection>
 </Layout>
 <!-- Google tag (gtag.js) -->

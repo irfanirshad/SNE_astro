@@ -1,0 +1,45 @@
+---
+import {
+	Button,
+	Container,
+	TextCardSection,
+} from '@littlesticks/odyssey-theme-components';
+import Layout from '../../layouts/Page.astro';
+
+const seo = {
+	title: 'Fully furnished office space for rent in Chennai. Book your office in Chennai by tomorrow',
+	description: 'Office Spaces for Rent in Chennai. Fully furnished office space for rent in Chennai. Book your office in Chennai by tomorrow',
+};
+---
+
+<Layout {seo}>
+	<Container>
+		<TextCardSection>
+			<h1>Your Form has been submitted. Thank you!</h1>
+			<h2>Please expect a call from us soon! 👀</h2>
+			<div class="cta-buttons__container">
+				<Button href="/">Return Home</Button>
+			</div>
+		</TextCardSection>
+	</Container>
+</Layout>
+
+<style>
+	.cta-buttons__container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.cta-buttons__container :global(a) {
+		margin-right: 1rem;
+		margin-bottom: 1rem;
+	}
+	.code-buttons__container {
+		margin: 1rem auto;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.code-buttons__container > a {
+		margin-right: 1rem;
+		margin-bottom: 1rem;
+	}
+</style>

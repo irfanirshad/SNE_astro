@@ -6,9 +6,11 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 ---
 
 <Container>
+	{settings.enableThemeSwitcher && <ThemeSwitcher client:load/>}
 	<section class="hero-section__section">
+		
 		<div class="hero-section__text">
-				<h3>S N Enterprises.Since 1999.</h3>
+				<h3>Find Your Perfect Workspace</h3>
 				<p>
 					The fastest Real Estate providers in Chennai. <a
 						href="https://astro.build"
