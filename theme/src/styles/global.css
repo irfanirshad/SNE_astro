@@ -19,3 +19,13 @@ pre {
 pre .language-id {
 	display: none;
 }
+
+
+.row {
+	display: flex;
+}
+
+.column {
+	flex: 20%;
+	padding: 14px;
+}

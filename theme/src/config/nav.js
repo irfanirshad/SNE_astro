@@ -8,12 +8,16 @@ export const nav = [
 		slug: '/blog',
 	},
 	{
+		title: 'Solutions',
+		slug: '/solutions/solutions',
+	},
+	{
 		title: 'About Us',
 		slug: '/company/about',
 	},
 	{
-		title: 'Solutions',
-		slug: '/solutions/solutions',
+		title: 'FAQ',
+		slug: '/company/faq',
 	},
 	{
 		title: 'Contact',
