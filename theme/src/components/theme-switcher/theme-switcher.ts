@@ -13,27 +13,27 @@ const themes = [
 	{
 		name: 'default',
 		icon: classicThemeIcon,
-		label: 'Classic',
+		label: 'classic',
 	},
 	{
 		name: 'dark',
 		icon: darkThemeIcon,
-		label: 'Dark',
+		label: 'night',
 	},
 	{
 		name: 'earth',
 		icon: earthThemeIcon,
-		label: 'Earth',
+		label: 'clay',
 	},
 	{
 		name: 'ocean',
 		icon: blueThemeIcon,
-		label: 'Ocean',
+		label: 'skyblue',
 	},
 	{
 		name: 'sand',
 		icon: orangeThemeIcon,
-		label: 'Sand',
+		label: 'fire',
 	},
 ];
 
@@ -106,19 +106,19 @@ export class ThemeSwitcher extends LitElement {
 			'#home-hero-image'
 		) as HTMLImageElement;
 		if (theme === 'default') {
-			_heroImage.src = '/assets/images/home/classic-hero.jpg';
+			_heroImage.src = '/assets/images/home/about/classic1.jpg';
 		}
 		if (theme === 'dark') {
-			_heroImage.src = '/assets/images/home/dark-hero.jpg';
+			_heroImage.src = '/assets/images/home/about/night2.jpg';
 		}
 		if (theme === 'earth') {
-			_heroImage.src = '/assets/images/home/earth-hero.jpg';
+			_heroImage.src = '/assets/images/home/lp/ocean1.jpg';
 		}
 		if (theme === 'ocean') {
-			_heroImage.src = '/assets/images/home/ocean-hero.jpg';
+			_heroImage.src = '/assets/images/home/lp/blue1.jpg';
 		}
 		if (theme === 'sand') {
-			_heroImage.src = '/assets/images/home/sand-hero.jpg';
+			_heroImage.src = '/assets/images/home/lp/sand3.jpg';
 		}
 		localStorage.setItem('theme', theme);
 		this.theme = theme;

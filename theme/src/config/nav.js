@@ -20,10 +20,6 @@ export const nav = [
 		slug: '/company/faq',
 	},
 	{
-		title: 'Contact',
-		slug: '/company/contact',
-	},
-	{
 		title: 'Legal',
 		slug: '/company/legal',
 	},

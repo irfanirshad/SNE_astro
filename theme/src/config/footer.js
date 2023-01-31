@@ -25,19 +25,19 @@ export const footerSocials = [
 
 export const footerLists = [
 	{
-		title: 'Landing Pages',
+		title: 'Home',
 		items: [
 			{
-				title: 'Landing Page 1',
-				slug: '/landing-pages/landing-1',
+				title: 'Home',
+				slug: '/',
 			},
 			{
-				title: 'Landing Page 2',
-				slug: '/landing-pages/landing-2',
+				title: 'Solutions',
+				slug: '/solutions/solutions',
 			},
 			{
-				title: 'Landing Page 3',
-				slug: '/landing-pages/landing-3',
+				title: 'Blog',
+				slug: '/blog',
 			},
 		],
 	},
@@ -45,12 +45,12 @@ export const footerLists = [
 		title: 'Company',
 		items: [
 			{
-				title: 'About',
+				title: 'About Us',
 				slug: '/company/about',
 			},
 			{
-				title: 'Blog',
-				slug: '/blog',
+				title: 'FAQ',
+				slug: '/company/faq',
 			},
 			{
 				title: 'Contact',
@@ -59,23 +59,11 @@ export const footerLists = [
 		],
 	},
 	{
-		title: 'Theme',
+		title: 'Legal',
 		items: [
 			{
-				title: 'Get Started',
-				slug: '/theme/get-started',
-			},
-			{
-				title: 'Style Guide',
-				slug: '/theme/style-guide',
-			},
-			{
-				title: 'Theme Setup',
-				slug: '/theme/theme-setup',
-			},
-			{
-				title: 'Customizing Odyssey',
-				slug: '/theme/customizing-odyssey',
+				title: 'Legal',
+				slug: '/company/legal',
 			},
 		],
 	},

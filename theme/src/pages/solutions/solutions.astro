@@ -1,32 +1,72 @@
 ---
-import { Container,TextCardSection, FeatureCard } from '@littlesticks/odyssey-theme-components';
+import { Container,TextCardSection, FeatureCard,StickyTextImageSection } from '@littlesticks/odyssey-theme-components';
 
 import Layout from '../../layouts/Page.astro';
 import HomeHeroSection from '../../components/sections/heros/HomeHeroSection.astro';
 ---
 
-<Layout>
+<Layout {seo}>
 	<!-- <HomeHeroSection /> -->
 	<Container>
 	<TextCardSection>
 		<h1>Our Core Competencies</h1>
-		<p>
-			SN Enterprises specialize in rentals of office spaces & warehouses in and around Chennai, we currently manage an active database of more than 100,000 properties in office space,  properties in warehouse / factory / commercial land, guest houses & business centre's.
+		<h4>
+			SN Enterprises specialize in rentals of office spaces & warehouses in and around Chennai, we currently manage an active database of more than 300,000 properties in office space, warehouses / factories / commercial lands, guest houses & business centers.	
 			<br/>
 			<br/>
 			Providing you the best range of Real Estate Services, Landlord Based Services, Commercial Construction Service and Real Estate Building with effective & timely delivery.
 
 			Our comprehensive service portfolio include:
 				<ul style=“list-style-type:square”>
-				<li>Property Leasing</li>
-				<li>Property Selling</li>
-				<li>Property Buying</li>
-				<li>Property Management</li>
+				<li>Leasing </li>
+				<li>Selling </li>
+				<li>Buying </li>
 				</ul>
-		</p>
+		</h4>
 	</TextCardSection>
 </Container>
-	<Container>
+<StickyTextImageSection>
+	<div slot="text-container">
+		<h2>What's the Secret Sauce?</h2>
+		<h3>AI-powered property search</h3>
+		<p>
+			SNE has an in-depth understanding of local real estate markets and uses advanced AI tools to analyze market trends and identify high-quality investment opportunities. 
+			<br/>
+			This is how SNE uses AI algorithms to help clients find their ideal property based on their preferences, budget, and location.
+		</p>
+		<h3>Due diligence</h3>
+		<p>
+			SNE conducts thorough due diligence on potential investments, using both traditional research methods and AI-powered analysis tools to ensure that its clients make informed decisions.
+		</p>
+		<h3>Real-time market analysis</h3>
+		<p>
+			Machine learning models provide real-time market analysis, helping clients make informed decisions about buying or selling properties.<br/> Ability to gather and analyze large amounts of data to identify high-quality investment opportunities for clients combined with comprehensive understanding of real estate trends, regulations, and financial analysis for informed decision-making.
+		</p>
+		<h3>Due diligence</h3>
+		<p>
+			SNE performs comprehensive due diligence on investment prospects by utilizing a combination of conventional research techniques and AI-based analysis tools, guaranteeing that its clients make knowledgeable choices.
+		</p>
+		<h3>Ethics</h3>
+		<p>
+			Strong ethics and commitment to maintaining the highest standards of professionalism and integrity in all business dealings.
+		</p>
+	</div>
+	<picture slot="image-container">
+		<img
+			src="/assets/images/home/about/aiml1.gif"
+			alt="Astro Odyssey"
+			loading="lazy"
+		/>
+	</picture>
+	<picture slot="image-container">
+		<img
+			src="/assets/images/home/about/aiml1.gif"
+			alt="Astro Odyssey"
+			loading="lazy"
+		/>
+	</picture>
+</StickyTextImageSection>	
+<Container>
 		<section class="feature-card__section">
 			<h2>Company Pages</h2>
 			<p>
@@ -47,7 +87,7 @@ import HomeHeroSection from '../../components/sections/heros/HomeHeroSection.ast
 				<FeatureCard
 					href="/blog/posts/remote-work-mental-health"
 					title="Blog Post"
-          			imgSrc="/assets/images/home/screenshots/blog-post"
+    				imgSrc="/assets/images/home/screenshots/blog-post"
 					>
 				</FeatureCard>
 				<FeatureCard
