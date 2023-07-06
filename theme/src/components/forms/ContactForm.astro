@@ -19,7 +19,9 @@ const selectOptions = ['Google Search', 'Social Media', 'Email'];
 
 <!-- TODO -->
 <!-- better form submission script service which handles more fields and is free for use -->
-<form action="https://formsubmit.co/ibm2014002@iiita.ac.in" method="POST">
+
+
+<form action="https://formsubmit.co/contact@snechennai.com" method="POST">
 	<input
 		type="hidden"
 		name="_subject"
@@ -30,25 +32,25 @@ const selectOptions = ['Google Search', 'Social Media', 'Email'];
 		type="text"
 		name="name"
 		label="Name"
-		placeholder="Your Name"
+		placeholder="John Doe"
 		required
 	/>
 	<input
 		type="hidden"
 		name="_blacklist"
-		value="spammy, spam, bot , wp, porn, xxx, porno, banned, term, phrase"
+		value="spammy, spam, bot , wp, porn, xxx, porno, banned, term, phrase, hack, hacked, money"
 	/>
 	<FormInput
 		type="email"
 		label="Email"
 		name="email"
-		placeholder="Email Address"
+		placeholder="johndoe@example.com"
 		required
 	/>
 	<input
 		type="hidden"
 		name="_autoresponse"
-		value="your custom message.THANKYOU FOR SUBMISSiOn"
+		value="Your response has been submitted to SNE Realty. Your form will soon be reviewed and a response will be dispatched soon. "
 	/>
 	<FormInput
 		type="text"
@@ -57,8 +59,9 @@ const selectOptions = ['Google Search', 'Social Media', 'Email'];
 		placeholder="Drop your number here and let us give you a free consult."
 		required
 	/>
-	<input type="hidden" name="_next" value="http://snechennai.com/submission/thankyou" />
+	<input type="hidden" name="_next" value="https://www.snechennai.com/submission/thankyou" />
 	<input type="text" name="_honey" style="display:none" />
+	<input type="hidden" name="_captcha" value="false">
 	<button type="submit">Send</button>
 </form>
 
