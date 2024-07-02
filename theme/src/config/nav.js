@@ -19,9 +19,5 @@ export const nav = [
 		title: 'FAQ',
 		slug: '/company/faq',
 	},
-	{
-		title: 'Legal',
-		slug: '/company/legal',
-	},
 ];
 // testing github working

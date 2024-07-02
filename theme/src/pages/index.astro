@@ -19,6 +19,8 @@ const seo = {
 };
 ---
 
+
+
 <AnnouncementBar
 	text="Read Our Latest Blog Post"
 	href="/blog/posts/remote-work-mental-health/"
@@ -29,26 +31,47 @@ const seo = {
 
 	<TextCardSection>
 		<h4>Our Partners</h4>
-			<div class="row">
-				<div class="column">
-				<img src="/assets/images/home/customers/byjus1.png" height="130" alt="Snow" style="width:150%">
-				</div>
-				<div class="column">
-					<img src="/assets/images/home/customers/chai1-trimmy.jpg" height="130" alt="Snow" style="width:190%">
-				  </div>
-				  <div class="column">
-					<img src="/assets/images/home/customers/mb-trimmy.jpg" height="130" alt="Snow" style="width:190%">
-				  </div>
-				  <div class="column">
-					<img src="/assets/images/home/customers/jmfl1.png" height="130" alt="Snow" style="width:190%">
-				  </div>
-				  <div class="column">
-					<img src="/assets/images/home/customers/ng.jpg" height="130" alt="Snow" style="width:190%">
-				  </div>
-				  <div class="column">
-					<img src="/assets/images/home/customers/icici.png" height="130" alt="Snow" style="width:190%">
-				  </div>
-			  </div>
+        <div class="partner-section">
+            <div class="slider">
+                <div class="column">
+                    <img src="/assets/images/home/customers/byjus1.png" alt="Byju's">
+                </div>
+                <div class="column">
+                    <img src="/assets/images/home/customers/chai1-trimmy.jpg" alt="Chai">
+                </div>
+                <div class="column">
+                    <img src="/assets/images/home/customers/mb-trimmy.jpg" alt="MB">
+                </div>
+                <div class="column">
+                    <img src="/assets/images/home/customers/jmfl1.png" alt="JMFL">
+                </div>
+                <div class="column">
+                    <img src="/assets/images/home/customers/ng.jpg" alt="NG">
+                </div>
+                <div class="column">
+                    <img src="/assets/images/home/customers/icici.png" alt="ICICI">
+                </div>
+                <!-- Repeat the images to create a continuous loop effect -->
+                <div class="column">
+                    <img src="/assets/images/home/customers/byjus1.png" alt="Byju's">
+                </div>
+                <div class="column">
+                    <img src="/assets/images/home/customers/chai1-trimmy.jpg" alt="Chai">
+                </div>
+                <div class="column">
+                    <img src="/assets/images/home/customers/mb-trimmy.jpg" alt="MB">
+                </div>
+                <div class="column">
+                    <img src="/assets/images/home/customers/jmfl1.png" alt="JMFL">
+                </div>
+                <div class="column">
+                    <img src="/assets/images/home/customers/ng.jpg" alt="NG">
+                </div>
+                <div class="column">
+                    <img src="/assets/images/home/customers/icici.png" alt="ICICI">
+                </div>
+            </div>
+        </div>
 </TextCardSection>
 
 	<Container>
@@ -167,4 +190,61 @@ const seo = {
 			grid-template-columns: 1fr;
 		}
 	}
+
+	/* Partner section container to ensure the images stay within bounds and slide smoothly */
+.partner-section {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Slider that will be animated to create the sliding effect */
+.slider {
+    display: inline-block;
+    animation: slide 20s linear infinite;
+}
+
+/* Individual columns for each partner image */
+.column {
+    display: inline-block;
+    padding: 0 20px; /* Adjust padding as necessary */
+}
+
+/* Styling for images to ensure they fit well within their container */
+.column img {
+    height: 130px;
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image fits within its container without distortion */
+}
+
+/* Keyframes to animate the slider from right to left */
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Feature card section styling */
+.feature-card__section {
+    margin: var(--section-margin) auto;
+}
+
+/* Grid layout for feature cards */
+.feature-card__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--theme-grid-gap);
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+    .feature-card__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 </style>
