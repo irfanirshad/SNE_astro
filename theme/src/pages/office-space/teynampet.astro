@@ -1,0 +1,150 @@
+---
+import { Icon } from 'astro-icon';
+import {
+	AnnouncementBar,
+	Button,
+	Container,
+	FeatureCard,
+	CustomerQuoteSection,
+	ThreeColumnTextSection,
+	YouTubeEmbedSection,
+	StickyTextImageSection,
+	CtaCardSection,
+} from '@littlesticks/odyssey-theme-components';
+import Layout from '../../layouts/Page.astro';
+import TextAndImageHero from '../../components/sections/heros/TextAndImageHero.astro';
+import HomeHeroSection from '../../components/sections/heros/HomeHeroSection.astro';
+const seo = {
+	title: 'Office Spaces in Teynampet | Astro Odyssey Theme',
+	description: 'Office Spaces in Teynampet | Astro Odyssey Theme',
+};
+---
+
+<!--AnnouncementBar
+	text="Read Our Latest Blog Post"
+	href="/blog/posts/remote-work-mental-health/"
+	slot="announcement-bar"
+/-->
+<Layout {seo}>
+
+	
+<Container>
+		<section class="feature-card__section">
+			<h2>Office Spaces in Teynampet</h2>
+			<p>
+				<!-- Use one of our landing pages to jumpstart your website or ad campaign. -->
+			</p>
+			<div class="feature-card__grid">
+				<FeatureCard
+					
+					title=""
+					imgSrc="/assets/images/properties/teynampet/1"
+				/>
+			<FeatureCard
+					
+					title=""
+					imgSrc="/assets/images/properties/teynampet/2"
+				/>
+			<FeatureCard
+					
+					title=""
+					imgSrc="/assets/images/properties/teynampet/3"
+				/>
+			<FeatureCard
+					
+					title=""
+					imgSrc="/assets/images/properties/teynampet/4"
+				/>
+			
+			
+			<FeatureCard
+					
+					title=""
+					imgSrc="/assets/images/properties/teynampet/7"
+				/>
+			<FeatureCard
+					
+					title=""
+					imgSrc="/assets/images/properties/teynampet/8"
+				/>
+			<FeatureCard
+					
+					title=""
+					imgSrc="/assets/images/properties/teynampet/9"
+				/>
+			
+			<FeatureCard
+					
+					title=""
+					imgSrc="/assets/images/properties/teynampet/11"
+				/>
+			<FeatureCard
+					
+					title=""
+					imgSrc="/assets/images/properties/teynampet/12"
+				/>
+		
+			<FeatureCard
+					
+					title=""
+					imgSrc="/assets/images/properties/teynampet/13"
+				/>
+			
+			<FeatureCard
+					
+					title=""
+					imgSrc="/assets/images/properties/teynampet/14"
+				/>
+			
+			
+			<FeatureCard
+					
+					title=""
+					imgSrc="/assets/images/properties/teynampet/16"
+				/>
+			
+			<FeatureCard
+					
+					title=""
+					imgSrc="/assets/images/properties/teynampet/17"
+				/>
+			
+			<FeatureCard
+					
+					title=""
+					imgSrc="/assets/images/properties/teynampet/18"
+				/>
+			
+		
+			</div>
+		</section>
+			<Button  href="#">Top </Button>
+	</Container>
+
+</Layout>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TP9WQS0XCW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TP9WQS0XCW');
+</script>
+
+<style>
+	.feature-card__section {
+		margin: var(--section-margin) auto;
+	}
+	.feature-card__grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--theme-grid-gap);
+	}
+	@media (max-width: 768px) {
+		.feature-card__grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

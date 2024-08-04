@@ -1,0 +1,118 @@
+---
+import { Icon } from 'astro-icon';
+import {
+	AnnouncementBar,
+	Button,
+	Container,
+	FeatureCard,
+	CustomerQuoteSection,
+	ThreeColumnTextSection,
+	YouTubeEmbedSection,
+	StickyTextImageSection,
+	CtaCardSection,
+} from '@littlesticks/odyssey-theme-components';
+import Layout from '../layouts/Page.astro';
+import TextAndImageHero from '../components/sections/heros/TextAndImageHero.astro';
+import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
+const seo = {
+	title: 'Office Spaces in Mount Road | Astro Odyssey Theme',
+	description: 'Office Spaces in Mount Road | Astro Odyssey Theme',
+};
+---
+
+<!--AnnouncementBar
+	text="Read Our Latest Blog Post"
+	href="/blog/posts/remote-work-mental-health/"
+	slot="announcement-bar"
+/-->
+<Layout {seo}>
+
+	
+	<Container>
+		<section class="feature-card__section">
+			<h2>Office Spaces from 1000 to 30,000 Sq.ft</h2>
+			<p>
+				<!-- Use one of our landing pages to jumpstart your website or ad campaign. -->
+			</p>
+			<div class="feature-card__grid">
+				<FeatureCard
+					href="/office-space/mount-road"
+					title="Office Spaces in Mount Road"
+					imgSrc="/assets/images/properties/mountroad/5"
+				/>
+				<FeatureCard
+					href="/office-space/alwarpet"
+					title="Office Space in Alwarpet"
+					imgSrc="/assets/images/properties/alwarpet/4"
+				/>
+				<FeatureCard
+					href="/office-space/nungambakkam"
+					title="Office Space in Nungambakkam"
+					imgSrc="/assets/images/properties/nungambakkam/t1"
+				/>
+				<FeatureCard
+					href="/office-space/guindy"
+					title="Office Space in Guindy"
+					imgSrc="/assets/images/properties/guindy/2"
+				/>
+				<FeatureCard
+					href="/office-space/annanagar"
+					title="Office Space in Anna Nagar"
+					imgSrc="/assets/images/properties/annanagar/1"
+				/>
+				<FeatureCard
+					href="/office-space/tnagar"
+					title="Office Space in T.Nagar"
+					imgSrc="/assets/images/properties/tnagar/1"
+				/>
+				<FeatureCard
+					href="/office-space/mylapore"
+					title="Office Space in Mylapore"
+					imgSrc="/assets/images/properties/mylapore/1"
+				/>
+				<FeatureCard
+					href="/office-space/teynampet"
+					title="Office Space in Teynampet"
+					imgSrc="/assets/images/properties/teynampet/2"
+				/>
+						<FeatureCard
+					href="/office-space/adyar"
+					title="Office Space in Adyar"
+					imgSrc="/assets/images/properties/adyar/1"
+				/>
+						<FeatureCard
+					href="/office-space/omr"
+					title="Office Space in OMR"
+					imgSrc="/assets/images/properties/omr/2"
+				/>
+			</div>
+		</section>
+	</Container>
+
+</Layout>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TP9WQS0XCW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TP9WQS0XCW');
+</script>
+
+<style>
+	.feature-card__section {
+		margin: var(--section-margin) auto;
+	}
+	.feature-card__grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--theme-grid-gap);
+	}
+	@media (max-width: 768px) {
+		.feature-card__grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

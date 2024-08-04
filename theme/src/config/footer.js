@@ -23,9 +23,62 @@ export const footerSocials = [
 	// },
 ];
 
+// export const footerLists = [
+// 	{
+// 		title: 'Home',
+// 		items: [
+// 			{
+// 				title: 'Home',
+// 				slug: '/',
+// 			},
+// 			{
+// 				title: 'Solutions',
+// 				slug: '/solutions/solutions',
+// 			},
+// 			{
+// 				title: 'Blog',
+// 				slug: '/blog',
+// 			},
+// 		],
+// 	},
+// 	{
+// 		title: 'Company',
+// 		items: [
+// 			{
+// 				title: 'About Us',
+// 				slug: '/company/about',
+// 			},
+// 			{
+// 				title: 'FAQ',
+// 				slug: '/company/faq',
+// 			},
+// 			{
+// 				title: 'Contact',
+// 				slug: '/company/contact',
+// 			},
+// 			{
+// 				title: 'Legal',
+// 				slug: '/company/legal',
+// 			},
+// 		],
+// 	},
+	
+// 	{
+// 		title: 'Solutions',
+// 		items: [
+// 			{
+// 				title: 'Interior Designing',
+// 				slug: '/company/interior',
+// 			},
+// 		],
+// 	},
+// ];
+
+
+
 export const footerLists = [
 	{
-		title: 'Home',
+		//title: 'Home',
 		items: [
 			{
 				title: 'Home',
@@ -35,14 +88,14 @@ export const footerLists = [
 				title: 'Solutions',
 				slug: '/solutions/solutions',
 			},
-			{
+			/*{
 				title: 'Blog',
 				slug: '/blog',
-			},
+			},*/
 		],
 	},
 	{
-		title: 'Company',
+		//title: 'Company',
 		items: [
 			{
 				title: 'About Us',
@@ -56,20 +109,15 @@ export const footerLists = [
 				title: 'Contact',
 				slug: '/company/contact',
 			},
+		],
+	},
+	/*{
+		title: 'Legal',
+		items: [
 			{
 				title: 'Legal',
 				slug: '/company/legal',
 			},
 		],
-	},
-	
-	{
-		title: 'Solutions',
-		items: [
-			{
-				title: 'Interior Designing',
-				slug: '/company/interior',
-			},
-		],
-	},
+	},*/
 ];

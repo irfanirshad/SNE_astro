@@ -1,0 +1,227 @@
+---
+import { Icon } from 'astro-icon';
+import {
+	AnnouncementBar,
+	Button,
+	Container,
+	FeatureCard,
+	TextCardSection,
+	CustomerQuoteSection,
+	ThreeColumnTextSection,
+	YouTubeEmbedSection,
+	StickyTextImageSection,
+	CtaCardSection,
+} from '@littlesticks/odyssey-theme-components';
+import Layout from '../layouts/Page.astro';
+import TextAndImageHero from '../components/sections/heros/TextAndImageHero.astro';
+import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
+const seo = {
+	title: 'Landing Page #1 | Astro Odyssey Theme',
+	description: 'Landing Page #1 | Astro Odyssey Theme',
+};
+---
+
+<!--AnnouncementBar
+	text="Read Our Latest Blog Post"
+	href="/blog/posts/remote-work-mental-health/"
+	slot="announcement-bar"
+/-->
+<Layout {seo}>
+
+	
+<Container>
+		<section class="feature-card__section">
+			<h2>Interior Designer & Decorator</h2>
+			<p>
+				Interior design is the art and science of enhancing the interior of a building to achieve a healthier and more aesthetically pleasing environment for the people using the space.
+			</p>
+			<p>
+			An interior designer is someone who plans, researches, coordinates, and manages such enhancement projects. Interior design is a multifaceted profession that includes conceptual development, 
+ space planning, site inspections, programming, research, communicating with the stakeholders of a project, construction management, and execution of the design.
+			</p>
+			
+				<h3>About US </h3>
+			<p>
+				At SN Enterprises, we believe that every space has a story to
+tell, and we're here to help you tell yours. As a premier interior
+design firm, we specialize in transforming environments into
+reflections of your unique style, personality, and aspirations.
+
+			</p>
+				<h3>Our Vision </h3>
+			<p>
+			Our vision is to redefine spaces, blending functionality with
+aesthetics to create environments that inspire and uplift.
+Whether you're seeking a contemporary haven, a classic retreat,
+or a bold statement, our team of passionate designers is
+dedicated to bringing your vision to life.
+
+			</p>
+			</section>
+	</Container>	
+			
+<!--TextCardSection>
+    
+				<h3>About US </h3>
+			<p>
+				At SN Enterprises, we believe that every space has a story to
+tell, and we're here to help you tell yours. As a premier interior
+design firm, we specialize in transforming environments into
+reflections of your unique style, personality, and aspirations.
+
+			</p>
+				<h3>Our Vision </h3>
+			<p>
+			Our vision is to redefine spaces, blending functionality with
+aesthetics to create environments that inspire and uplift.
+Whether you're seeking a contemporary haven, a classic retreat,
+or a bold statement, our team of passionate designers is
+dedicated to bringing your vision to life.
+
+			</p>
+</TextCardSection-->
+	<Container>
+		<section class="feature-card__section">		
+			<div class="feature-card__grid">
+				<FeatureCard
+					
+					title="Meeting Room"
+					imgSrc="/assets/images/interior/meeting"
+				/>
+			<FeatureCard
+					
+					title="Cabin"
+					imgSrc="/assets/images/interior/cabin"
+				/>
+			<FeatureCard
+					
+					title="Meeting Hall"
+					imgSrc="/assets/images/interior/3"
+				/>
+			<FeatureCard
+					
+					title="Reception "
+					imgSrc="/assets/images/interior/4"
+				/>
+			<FeatureCard
+					
+					title="Creative Office Interior"
+					imgSrc="/assets/images/interior/5"
+				/>
+			<FeatureCard
+					
+					title="Lobby Interior"
+					imgSrc="/assets/images/interior/6"
+				/>
+			<!--FeatureCard
+					
+					title="Presentation Room"
+					imgSrc="/assets/images/interior/7"
+				/-->
+			</div>
+				<br>
+				<h2>Our Projects </h2>
+			
+			<div class="feature-card__grid">
+			<FeatureCard
+					
+					title="	"
+					imgSrc="/assets/images/interior/8"
+				/>
+			<FeatureCard
+					
+					title=""
+					imgSrc="/assets/images/interior/9"
+				/>
+			
+			<!--FeatureCard
+					
+					title=""
+					imgSrc="/assets/images/interior/11"
+				/>
+			<FeatureCard
+					
+					title=""
+					imgSrc="/assets/images/interior/12"
+				/>
+		
+			<FeatureCard
+					
+					title=""
+					imgSrc="/assets/images/interior/20"
+				/>
+			
+			
+			
+			<FeatureCard
+					
+					title=""
+					imgSrc="/assets/images/interior/17"
+				/-->
+			
+			<FeatureCard
+					
+					title=""
+					imgSrc="/assets/images/interior/16"
+				/>
+			
+			<FeatureCard
+					
+					title=""
+					imgSrc="/assets/images/interior/15"
+				/>
+			
+			<FeatureCard
+					
+					title=""
+					imgSrc="/assets/images/interior/18"
+				/>
+			
+			<FeatureCard
+					
+					title=""
+					imgSrc="/assets/images/interior/21"
+				/>
+			
+			<FeatureCard
+					
+					title=""
+					imgSrc="/assets/images/interior/22"
+				/>			
+			<FeatureCard
+					
+					title=""
+					imgSrc="/assets/images/interior/23"
+				/>							
+			
+			</div>
+		</section>
+	</Container>
+
+</Layout>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TP9WQS0XCW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TP9WQS0XCW');
+</script>
+
+<style>
+	.feature-card__section {
+		margin: var(--section-margin) auto;
+	}
+	.feature-card__grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--theme-grid-gap);
+	}
+	@media (max-width: 768px) {
+		.feature-card__grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
