@@ -15,6 +15,29 @@ const title = Astro.props.title || settings.title;
 const description = Astro.props.description || settings.description;
 const canonicalURL = Astro.props.canonicalURL || new URL(Astro.url.pathname, Astro.site);
 const image = new URL(Astro.props.image || './social.png', Astro.site);
+
+// Who SNE is, for Google (18 Oct 2026): the names people search for, so "snechennai" reads as
+// this business rather than a misspelling. On the home page only. The details match the
+// property portal's (property.snechennai.in, src/lib/contact.ts).
+const business = {
+	'@context': 'https://schema.org',
+	'@type': 'RealEstateAgent',
+	name: 'S N Enterprises',
+	alternateName: ['SNE Chennai', 'snechennai', 'SNE Realty'],
+	url: 'https://snechennai.in/',
+	image: new URL('/social.png', Astro.site).href,
+	telephone: '+91 98411 40122',
+	address: {
+		'@type': 'PostalAddress',
+		streetAddress: '#20, 59th Street, Ashok Nagar',
+		addressLocality: 'Chennai',
+		postalCode: '600083',
+		addressRegion: 'Tamil Nadu',
+		addressCountry: 'IN',
+	},
+	areaServed: 'Chennai',
+	sameAs: ['https://property.snechennai.in/'],
+};
 ---
 
 <!-- Global Metadata -->
@@ -28,6 +51,7 @@ const image = new URL(Astro.props.image || './social.png', Astro.site);
 <meta name="title" content={title} />
 <meta name="description" content={description} />
 <link rel="canonical" href={canonicalURL} />
+{Astro.url.pathname === '/' && <script type="application/ld+json" set:html={JSON.stringify(business)} />}
 <!-- Generator -->
 <meta name="generator" content={Astro.generator} />
 <!-- Open Graph / Facebook -->

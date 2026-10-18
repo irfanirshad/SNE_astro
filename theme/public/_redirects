@@ -1,0 +1,13 @@
+# Netlify redirects (18 Oct 2026).
+
+# One address for Google: snechennai.com serves the same site, so it sends everything to snechennai.in.
+https://snechennai.com/*      https://snechennai.in/:splat  301!
+http://snechennai.com/*       https://snechennai.in/:splat  301!
+https://www.snechennai.com/*  https://snechennai.in/:splat  301!
+http://www.snechennai.com/*   https://snechennai.in/:splat  301!
+
+# Stray copies of real pages, removed: anyone with an old link lands on the real one.
+/interior/interior            /interior                     301
+/company/interior             /interior                     301
+/office-space/interior        /warehouses                   301
+/office-space/office-space    /office-space/mount-road      301
