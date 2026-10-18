@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://snechennai.in/sitemap.xml
+Sitemap: https://snechennai.com/sitemap.xml
